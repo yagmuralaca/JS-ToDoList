@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka', sans-serif;
+    color:white;
+}
+.container{
+    padding:  20px 0;
+    border-radius: 8px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #FE9234;
+    min-height: 768px;
+}
+.nav{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    
+    padding:50px 0;
+    text-align: center;
+}
+.nav h2{
+    width: 90%;
+    font-size: 3rem;
+    margin: auto;
+}
+.user-input{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding:50px 0;
+    text-align: center;
+}
+.user-input input{
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    padding: 11px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+}
+.user-input input:focus{
+    box-shadow:  0 0 5px rgb(240, 240, 240);
+}
+.user-input button{
+    cursor: pointer;
+    margin: 0;
+    padding: 12px;
+    outline:none;
+    font-size:1rem ;
+    color: white;
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px;
+}
+.user-input button:hover{
+    background-color: #495057;
+    color: white;
+}
+.to-do-items{
+    width: 80%;
+    margin: auto;
+    
+}
+.item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform:capitalize;
+    transition: all 0.30s ease-in-out;
+}
+.item:hover{
+    outline: none;
+    transform: scale(1.02);
+}
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media(max-width:768px){
+    .container{
+        width: 90%;
+       
+    }
+}
+
